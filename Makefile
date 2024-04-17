@@ -2,10 +2,10 @@ TARGET := iphone:clang:latest:12.0
 
 include $(THEOS)/makefiles/common.mk
 
-TOOL_NAME = uckerTest
+TOOL_NAME = shortcuts
 
-uckerTest_FILES = Sources/*.swift
-uckerTest_CODESIGN_FLAGS = -Sentitlements.plist
-uckerTest_INSTALL_PATH = /usr/local/bin
+shortcuts_FILES = Sources/*.swift
+shortcuts_CODESIGN_FLAGS = -Sentitlements.plist
+shortcuts_INSTALL_PATH = /usr/local/bin
 
 include $(THEOS_MAKE_PATH)/tool.mk
